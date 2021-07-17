@@ -1,0 +1,200 @@
+body {
+  margin: auto;
+  font-family: 'Spartan', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  
+}
+
+.wrapper {
+  /* height: 100vh; */
+  width: 100vw;
+  background-color: hsl(300, 24%, 96%);
+  margin-bottom: 3em;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 3em 1em 1em 1em ;
+  color: hsl(300, 43%, 22%);
+}
+
+p {
+  color: hsl(303, 10%, 53%);
+  text-align: center;
+  margin: 0 1em;
+  font-weight: 500;
+}
+
+.ratings {
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.star {
+  content: url(images/icon-star.svg);
+  margin: 0 0.3em;
+  width: 18px;
+  height: 18px;
+}
+
+.rating p {
+  color: hsl(300, 43%, 22%);
+  font-weight: 700;
+  font-size: 0.8em;
+}
+
+.rating {
+  display: flex;
+  flex-direction: column;
+  margin-top: 3em;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  padding: 2em;
+  margin: 0 1.5em 1em 1.5em;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+}
+
+.review-header img {
+  border-radius: 50%;
+  width: 40px;
+}
+
+.review-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1.5em;
+}
+
+.name {
+  color: hsl(300, 24%, 96%);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+  font-size: 0.9em;
+  margin-top: 3px;
+}
+
+.review {
+  color: hsl(300, 24%, 96%);
+  letter-spacing: 0;
+  line-height: 1.8em;
+  font-weight: 400;
+  font-size: 0.92em;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-bottom: 1em;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 530px) {
+  .wrapper {
+    /* padding: 6em 10em; */
+    align-items: center;
+  }
+
+  .page-header {
+    flex-direction: row;
+    margin-bottom: 3em;
+    margin-top: 8em;
+    width: 1170px;
+  }
+
+  .header-heading {
+    width: 32em;
+    /* margin: 3em; */
+  }
+
+  h1 {
+    font-size: 3.2em;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 0.3em;
+    line-height: 1em;
+  }
+
+  .header-heading p {
+    text-align: left;
+    margin: 0;
+    line-height: 1.7em;
+  }
+
+  .ratings {
+    margin: 0;
+    margin-left: 8em;
+  }
+
+  .rating {
+    flex-direction: row;
+    margin-bottom: 3.5em;
+  }
+
+  .rating:nth-of-type(2) {
+    margin-left: 3.5em;
+  }
+
+  .rating:nth-of-type(3) {
+    margin-left: 7em;
+  }
+
+  .stars {
+    margin: 0;
+  }
+
+  .reviews {
+    flex-direction: row;
+  }
+
+  .card {
+    width: 310px;
+    margin: 0;
+  }
+
+  .card:nth-of-type(1) {
+    margin-bottom: 45px;
+  }
+
+  .card:nth-of-type(2) {
+    margin: 30px 30px;
+  }
+
+  .card:nth-of-type(3) {
+    margin-top: 45px;
+  }
+}
